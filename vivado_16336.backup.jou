@@ -1,0 +1,77 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Feb  7 09:33:40 2024
+# Process ID: 16336
+# Current directory: C:/Users/Alexander.Sick/Vivado/ece281-lab1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23952 C:\Users\Alexander.Sick\Vivado\ece281-lab1\thirtyoneday.xpr
+# Log file: C:/Users/Alexander.Sick/Vivado/ece281-lab1/vivado.log
+# Journal file: C:/Users/Alexander.Sick/Vivado/ece281-lab1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Alexander.Sick/Vivado/ece281-lab1/thirtyoneday.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+add_bp {C:/Users/Alexander.Sick/Vivado/ece281-lab1/src/hdl/thirtyOneDayMonth_tb.vhd} 94
+add_bp {C:/Users/Alexander.Sick/Vivado/ece281-lab1/src/hdl/thirtyOneDayMonth_tb.vhd} 95
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+remove_bps -file {C:/Users/Alexander.Sick/Vivado/ece281-lab1/src/hdl/thirtyOneDayMonth_tb.vhd} -line 94
+add_bp {C:/Users/Alexander.Sick/Vivado/ece281-lab1/src/hdl/thirtyOneDayMonth_tb.vhd} 94
+remove_bps -file {C:/Users/Alexander.Sick/Vivado/ece281-lab1/src/hdl/thirtyOneDayMonth_tb.vhd} -line 95
+remove_bps -file {C:/Users/Alexander.Sick/Vivado/ece281-lab1/src/hdl/thirtyOneDayMonth_tb.vhd} -line 94
+add_bp {C:/Users/Alexander.Sick/Vivado/ece281-lab1/src/hdl/thirtyOneDayMonth_tb.vhd} 93
+remove_bps -file {C:/Users/Alexander.Sick/Vivado/ece281-lab1/src/hdl/thirtyOneDayMonth_tb.vhd} -line 93
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+synth_design -rtl -name rtl_1
+close_sim
+open_hw
+connect_hw_server
+open_hw_target
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+launch_simulation
+source thirtyOneDayMonth_tb.tcl
+close_sim
+open_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alexander.Sick/Vivado/ece281-lab1/thirtyoneday.runs/impl_1/thirtyOneDayMonth.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Alexander.Sick/Vivado/ece281-lab1/thirtyoneday.runs/impl_1/thirtyOneDayMonth.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
